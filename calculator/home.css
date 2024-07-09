@@ -1,0 +1,197 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculater{
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px white,
+                    5px 5px 12px rgba(0,0,0,.16);
+
+    display: grid;
+    grid-template-columns: repeat(4, 90px);                 
+}
+
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset  5px 5px 12px rgba(0,0,0,.16);
+
+    border: none;
+    border-radius: 30px;
+    color: rgb(70,70,70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px white,
+                 5px 5px 12px rgba(0,0,0,.16);
+
+     border: none; 
+     border-radius: 50px;
+     margin: 8px;
+
+}
+
+
+.equal{
+    width: 130px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px white,
+                 5px 5px 12px rgba(0,0,0,.16);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .firstline{
+    display: flex
+    
+}
+
+.secondline{
+    display: flex
+    
+}
+
+.thirdline{
+    display: flex
+    
+}
+
+.fourthline{
+    display: flex
+    
+}
+
+.fifthline{
+    display: flex
+    
+}
+
+.row1{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.row2{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.row3{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.row4{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.row5{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.textspace{
+    width: 200px;
+    height: 50px;
+    background-color: white;;
+}
+
+.header{
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 1000px;
+    margin-left: -100px;
+
+}  */

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+    <script src="./home.js"></script>
+</head>
+<body>
+    
+  <div class="container">
+    <div class="calculater">
+        <input type="text" placeholder="0" id="output-Screen">
+        <button onclick="Clear()">C</button>
+        <button onclick="display('%')">%</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="display('/')">/</button>
+        <button onclick="display('7')">7</button>
+        <button onclick="display('8')">8</button>
+        <button onclick="display('9')">9</button>
+        <button onclick="display('*')">x</button>
+        <button onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('-')">-</button>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('+')">+</button>
+        <button onclick="display('0')">0</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="Calculate()" class="equal">=</button>
+    </div>
+</div>
+ <script>
+    let outputScreen = document.getElementById("output-Screen");
+
+    function display(num){
+      outputScreen.value += num;
+    }
+
+    function Calculate(){
+      try
+      {
+        document.getElementById("output-Screen").value = eval(outputScreen.value);
+      }
+      catch(err)
+      {
+        alert("Invalid")
+
+      }
+      
+    }
+
+    function Clear(){
+      outputScreen.value = "";
+    }
+
+    function del(){
+      outputScreen.value = outputScreen.value.slice(0, -1);
+    }
+
+ </script>
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="calculator">
+      <div class="content">
+         <div class="textspace"></div>
+         <div class="header"> 
+         <div class="firstline">
+            <div class="clear"><button class="row1">AC</button></div>
+              <div class="delete"><button class="row1">DEL</button></div>
+                <div class="percent"><button class="row1">%</button></div>
+                  <div class="slash"><button class="row1">/</button></div>
+                </div>
+
+
+                <div class="secondline">
+                    <div class="seven"><button class="row2">7</button></div>
+                      <div class="eight"><button class="row2">8</button></div>
+                        <div class="nine"><button class="row2">9</button></div>
+                          <div class="multiply"><button class="row2">*</button></div>
+                        </div>
+
+
+                        <div class="thirdline">
+                            <div class="four"><button class="row3">4</button></div>
+                              <div class="five"><button class="row3">5</button></div>
+                                <div class="six"><button class="row3">6</button></div>
+                                  <div class="sub"><button class="row3">-</button></div>
+                                </div>
+
+                                <div class="fourthline">
+                                    <div class="one"><button class="row4">1</button></div>
+                                      <div class="two"><button class="row4">2</button></div>
+                                        <div class="three"><button class="row4">3</button></div>
+                                          <div class="add"><button class="row4">+</button></div>
+                                        </div>    
+                                        
+                                        <div class="fifthline">
+                                            <div class="zeros"><button class="row5">00</button></div>
+                                            <div class="zero"><button class="row5">0</button></div>
+                                              <div class="dot"><button class="row5">.</button></div>
+                                                <div class="equal"><button class="row5">=</button></div>
+                                                  
+                                                </div>
+
+                                                </div>
+
+
+
+    
+    </div>
+</div> -->
+
+</body>
+</html>
